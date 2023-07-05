@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./index.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color:rgba(11, 11, 11, 0.994);
+        }
+            header .head{height :50px;
+            width: 100%;
+            background-color: black;
+            top: opx;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1{
+            font-size: 20px;
+            color: white;
+        }
+        li{
+            display: inline-flex;
+            align-items: center;
+            color: white;
+        }
+        ul{
+            margin-left: 200px;
+        }
+        .profileContainer{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+         .innerdiv{
+            display:flex;
+            background-color: black;
+            border-radius: 10px;
+            align-items: center;
+            margin: 1rem;
+            width: 20%;
+            box-sizing: content-box;
+            box-shadow:white;
+         }
+         .innerdiv img{
+            height:50px;
+            width: 50px;
+            border-radius: 50%;
+           
+         }
+         .innerdiv div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: .5rem;
+         }
+         main div{
+            margin-left: 200px;
+            color: white;
+            font-size: 20px;
+            font-family: Arial;
+            font-weight: 100;
+            margin-top: 5px;
+         }
+         main div button{
+            width: 50px;
+            height: 30px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            margin-left: 30%;
+         }
+         input{
+            margin-left: 200px;
+            height: 40px;
+            width: 500px;
+            border-radius: 10px;
+            font-size: 25px;
+            border: 2px solid gray;
+         }
+         main button{
+            width:70px;
+            height:40px;
+            background-color: rgba(10, 10, 10, 0.618);
+            color: white;
+            border-radius: 10px;
+            margin-left: 0%;
+            font-family: Arial;
+            font: size 20px; ;
+         }
+         a{
+            display: flex;
+            text-decoration: none;
+            color: white;
+            padding-left :10px;
+            padding-right:20px;
+            font-size: 10px;
+            font-family: Arial;
+         }
+         div .teja{
+            display: flex;
+            padding-right: 200px;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+          <ul>
+            <li> <img src="icons8-github-24.png" alt="gitlogo"></li>
+            <li> <h1>Github Finder</h1></li>
+        </ul> 
+        <div class="teja">
+        <a href=""><h2>Home</h2></a>
+        <a href=""><h2>About</h2></a></div>
+        </div>
+      
+    </header>
+    <main>
+        <div class="maindiv">
+            <h3>let's stalk someone on Github</h3>
+            <button id="clearButton" onclick="func1()">clear</button>
+        </div>
+        <input  id="searchBox" type="text">
+        <button id="searchButton" onclick="func()">go</button>
+
+        <div class="profileContainer" id="profileContainer"></div>
+    </main>
+</body>
+</html>
